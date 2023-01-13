@@ -39,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "868753426291-mudan5alh6hrtsghlqtk28nfupupopiq.apps.googleusercontent.com",
+              "client_id": "868753426291-bhvgg2a5fpjub69f99hnh73cjn2ruuuu.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.ecom"
+                "bundle_id": "com.example.flutterEcomApp"
               }
             }
           ]
@@ -75,10 +75,10 @@
               "client_type": 3
             },
             {
-              "client_id": "868753426291-mudan5alh6hrtsghlqtk28nfupupopiq.apps.googleusercontent.com",
+              "client_id": "868753426291-bhvgg2a5fpjub69f99hnh73cjn2ruuuu.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.ecom"
+                "bundle_id": "com.example.flutterEcomApp"
               }
             }
           ]
@@ -111,10 +111,10 @@
               "client_type": 3
             },
             {
-              "client_id": "868753426291-mudan5alh6hrtsghlqtk28nfupupopiq.apps.googleusercontent.com",
+              "client_id": "868753426291-bhvgg2a5fpjub69f99hnh73cjn2ruuuu.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.ecom"
+                "bundle_id": "com.example.flutterEcomApp"
               }
             }
           ]

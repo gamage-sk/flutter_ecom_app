@@ -12,10 +12,15 @@ class LoginScreen extends StatelessWidget {
    LoginScreen({super.key});
 
 
-   final usernameController = TextEditingController();
+   final emailController = TextEditingController();
    final passwordController = TextEditingController();
 
-   void SignUserIn() {} 
+   void signUserIn() async{
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: emailController.text,
+      password: passwordController.text,
+      );
+   } 
 
 
 
@@ -24,7 +29,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body:   SafeArea(
-        child:Center(
+        child:SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
           children:[
@@ -54,9 +59,9 @@ class LoginScreen extends StatelessWidget {
             
 
              MyTextField(
-              hintText: 'Username',
+              hintText: 'Email',
               obscureText: false,
-              controller: usernameController,
+              controller: emailController,
              ),
 
       const SizedBox(height: 10,),
@@ -87,7 +92,7 @@ class LoginScreen extends StatelessWidget {
 
             
             MyButton(
-              onTap: SignUserIn,
+              onTap: signUserIn,
             ),
         
           const SizedBox(height: 25,),
