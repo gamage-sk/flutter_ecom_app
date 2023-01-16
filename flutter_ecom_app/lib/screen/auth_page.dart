@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ecom_app/screen/home_screen.dart';
 import 'package:flutter_ecom_app/screen/login_screen.dart';
+import 'package:flutter_ecom_app/screen/registration_screen.dart';
+import 'login_or_register_screen.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -17,7 +19,7 @@ class AuthPage extends StatelessWidget {
             return  HomeScreen();
           }
           else {
-            return LoginScreen();
+            return LoginOrRegisterPage();
           }
         },
         ),
