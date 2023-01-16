@@ -7,6 +7,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter_ecom_app/components/my_button.dart';
 import 'package:flutter_ecom_app/components/my_textfield.dart';
 import 'package:flutter_ecom_app/components/square_tile.dart';
+import 'package:flutter_ecom_app/services/auth_service.dart';
 
 class LoginScreen extends StatefulWidget {
 
@@ -133,12 +134,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 hintText: 'Email',
                 obscureText: false,
                 controller: emailController,
+                
                ),
         
               const SizedBox(height: 10,),
           
                 MyTextField(
-                  hintText: 'Password' ,
+                 hintText: 'Password' ,
                 obscureText:true ,
                 controller: passwordController,
         
@@ -203,11 +205,17 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
              
               children: [
-             SquareTile(imagePath: 'lib/icon/google.png'),
+             SquareTile(
+              onTap: () => AuthService().signInWithGoogle(),
+              imagePath: 'lib/icon/google.png'),
         
               const SizedBox(width: 10,),
         
-              SquareTile(imagePath: 'lib/icon/apple.png'),
+              SquareTile(
+                onTap: () {
+                  
+                },
+                imagePath: 'lib/icon/apple.png'),
               ],
             ),
                

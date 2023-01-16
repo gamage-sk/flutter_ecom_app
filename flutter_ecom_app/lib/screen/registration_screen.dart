@@ -7,6 +7,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter_ecom_app/components/my_button.dart';
 import 'package:flutter_ecom_app/components/my_textfield.dart';
 import 'package:flutter_ecom_app/components/square_tile.dart';
+import 'package:flutter_ecom_app/services/auth_service.dart';
 
 class RegisterScreen extends StatefulWidget {
 
@@ -199,11 +200,17 @@ class _RegisterScreen extends State<RegisterScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
              
               children: [
-             SquareTile(imagePath: 'lib/icon/google.png'),
+             SquareTile(
+              onTap: () => AuthService().signInWithGoogle(),
+              imagePath: 'lib/icon/google.png'),
         
               const SizedBox(width: 10,),
         
-              SquareTile(imagePath: 'lib/icon/apple.png'),
+              SquareTile(
+                onTap: () {
+                  
+                },
+                imagePath: 'lib/icon/apple.png'),
               ],
             ),
                
