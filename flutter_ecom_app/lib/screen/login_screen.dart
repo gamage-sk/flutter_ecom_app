@@ -48,17 +48,6 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.pop(context);
 
       showErrorMessage(e.code);
-
-      // if (e.code == 'user-not-found') {
-      // wrongEmailMessage();
-
-      //   // print('No user found for that email') ;
-
-      // }else if (e.code == 'wrong-password'){
-      // wrongPasswordMessage();
-
-      //   // print('Wrong password buddy');
-      // }
     }
    } 
 
@@ -79,21 +68,6 @@ class _LoginScreenState extends State<LoginScreen> {
     );
    }
 
-  //   void wrongPasswordMessage(){
-  //   showDialog(
-  //     context: context, 
-  //     builder: (context) {
-  //    return const AlertDialog(
-  //     backgroundColor: Colors.deepPurple,
-  //       title: Center
-  //       (child: Text(
-  //         'Incorrect Password',
-  //         style: TextStyle(color: Colors.white),
-  //         )),
-  //     );
-  //   },
-  //   );
-  //  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,15 +82,12 @@ class _LoginScreenState extends State<LoginScreen> {
               
               SizedBox(height: 10,),
         
-          // Icon(
-          //   Icons.shopping_cart_outlined,
-          //   size: 150,
-          // ),
+          
               Image.asset("lib/icon/cart.png",
              
              width: 200,
               height: 200,
-              // fit: BoxFit.contain,
+           
               ),
               
              SizedBox(height: 25,),
