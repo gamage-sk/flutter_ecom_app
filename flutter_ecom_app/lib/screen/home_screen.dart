@@ -5,7 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 class HomeScreen extends StatelessWidget {
    HomeScreen({super.key});
 
-  final user = FirebaseAuth.instance.currentUser!;
+  // final user = FirebaseAuth.instance.currentUser;
 
   Future<void> signUserOut() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
@@ -20,9 +20,11 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(actions: [
       IconButton(onPressed: signUserOut, icon: Icon(Icons.logout))
       ]),
-      body: Center(child: Text("Logged IN AS : " + user.email! + user.uid,
+      body: Center(child: Text(
+       'hi',
       style: TextStyle(fontSize: 20),
-      ),),
+      ),)
+   
     );
   }
 }
