@@ -21,6 +21,7 @@ final user = FirebaseAuth.instance.currentUser()!;
       appBar: AppBar(actions: [
       IconButton(onPressed: signUserOut, icon: Icon(Icons.logout),)
       ], backgroundColor: Colors.blueGrey,),
+      
       body: SafeArea(
         child: Container(
           height: 1000,
@@ -76,7 +77,7 @@ final user = FirebaseAuth.instance.currentUser()!;
                 ),
                 child: ListTile(
                   leading: Icon(
-                    Icons.phone,
+                    Icons.perm_identity,
                     color: Colors.teal,
                   ),
                   title: Text(
